@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Vruttu 🎉</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        background: linear-gradient(135deg, #ffb6c1, #ff69b4, #ffc0cb);
+        font-family: 'Caveat', cursive;
+        text-align: center;
+        padding: 20px;
+        color: white;
+        animation: backgroundShift 10s infinite alternate;
+        overflow: visible;
+        position: relative;
+    }
+    @keyframes backgroundShift {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+    }
+    h1 {
+        font-size: 4em;
+        font-weight: normal;
+        text-shadow: 2px 2px 8px rgba(255, 20, 147, 0.6);
+        animation: glowBounce 3s infinite ease-in-out;
+        position: relative;
+        z-index: 10;
+    }
+    @keyframes glowBounce {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+    }
+    button {
+        background: #ff1493;
+        border: none;
+        padding: 15px 30px;
+        color: white;
+        font-size: 1.2em;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(255, 20, 147, 0.5);
+        transition: transform 0.2s;
+        font-family: 'Great Vibes', cursive;
+        position: relative;
+        z-index: 10;
+    }
+    button:hover { transform: scale(1.05); }
+    #hidden-content {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+        margin-top: 20px;
+        position: relative;
+        z-index: 10;
+    }
+    #hidden-image {
+        max-width: 80%;
+        border-radius: 15px;
+        box-shadow: 0 0 40px rgba(255, 105, 180, 0.7);
+        animation: glowPulse 2s infinite alternate;
+    }
+    @keyframes glowPulse {
+        from { box-shadow: 0 0 20px rgba(255, 105, 180, 0.5); }
+        to { box-shadow: 0 0 40px rgba(255, 105, 180, 1); }
+    }
+    #love-note {
+        font-size: 1.8em;
+        margin-top: 15px;
+        color: #fff0f5;
+        text-shadow: 2px 2px 5px rgba(255, 20, 147, 0.6);
+    }
+
+    /* Floating Photos */
+    .floating-photo {
+        position: absolute;
+        width: 150px;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        animation: floatPhoto 20s linear infinite, rotatePhoto 40s linear infinite;
+        opacity: 0.8;
+        z-index: 5;
+    }
+    @keyframes floatPhoto {
+        from { transform: translateY(110vh); }
+        to { transform: translateY(-150px); }
+    }
+    @keyframes rotatePhoto {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+ /* Floating Hearts */
+    .heart {
+        position: absolute;
+        bottom: -50px;
+        color: rgba(255, 255, 255, 0.7);
+        animation: floatHearts 8s infinite ease-in;
+        font-size: 24px;
+    }
+    @keyframes floatHearts {
+        0% {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-100vh) scale(1.5);
+            opacity: 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- Floating photos scattered -->
+<img src="https://raw.githubusercontent.com/Ricebaxl/v.mp3/c7ce52574ae831b3d8ec05d06155708cfd2c2fe4/WhatsApp%20Image%202025-08-13%20at%207.33.15%20PM%20%281%29.jpeg" class="floating-photo" style="left: 5%; animation-delay: 0s;">
+<img src="https://raw.githubusercontent.com/Ricebaxl/v.mp3/c7ce52574ae831b3d8ec05d06155708cfd2c2fe4/WhatsApp%20Image%202025-08-13%20at%207.33.15%20PM%20%282%29.jpeg" class="floating-photo" style="left: 25%; animation-delay: 2s;">
+<img src="https://raw.githubusercontent.com/Ricebaxl/v.mp3/c7ce52574ae831b3d8ec05d06155708cfd2c2fe4/WhatsApp%20Image%202025-08-13%20at%207.33.15%20PM.jpeg" class="floating-photo" style="left: 50%; animation-delay: 4s;">
+<img src="https://raw.githubusercontent.com/Ricebaxl/v.mp3/c7ce52574ae831b3d8ec05d06155708cfd2c2fe4/WhatsApp%20Image%202025-08-13%20at%207.39.43%20PM.jpeg" class="floating-photo" style="left: 75%; animation-delay: 6s;">
+<img src="https://raw.githubusercontent.com/Ricebaxl/v.mp3/2d22bdcd31d1920599eb87cf9ca6f45e814aa3d1/WhatsApp%20Image%202025-08-13%20at%209.05.33%20PM.jpeg" class="floating-photo" style="top: 75%; right:5%; animation-delay: 6s;">
+<img src="https://raw.githubusercontent.com/Ricebaxl/v.mp3/2d22bdcd31d1920599eb87cf9ca6f45e814aa3d1/WhatsApp%20Image%202025-08-13%20at%209.05.33%20PM%20%282%29.jpeg" class="floating-photo" style="top: 95%; left:50%; animation-delay: 4;">
+<img src="https://raw.githubusercontent.com/Ricebaxl/v.mp3/2d22bdcd31d1920599eb87cf9ca6f45e814aa3d1/WhatsApp%20Image%202025-08-13%20at%209.05.33%20PM%20%281%29.jpeg" class="floating-photo" style="top: 95%; left:25%; animation-delay: 2s;">
+<img src="https://raw.githubusercontent.com/Ricebaxl/v.mp3/2d22bdcd31d1920599eb87cf9ca6f45e814aa3d1/WhatsApp%20Image%202025-08-13%20at%209.05.31%20PM.jpeg" class="floating-photo" style="top: 75%; left:5%; animation-delay: 0s;">
+
+<h1>🎂Happy Birthday, Vruttu! 💖</h1>
+<p>14th August 2001 — The world's most special day!! 🌸</p>
+
+<button onclick="revealSurprise()">From Aani🎁</button>
+
+<div id="hidden-content">
+    <img id="hidden-image" src="https://raw.githubusercontent.com/Ricebaxl/v.mp3/1dafd1ce2f93d41e2564f40c2b5e0c9108b8a2e9/WhatsApp%20Image%202025-08-13%20at%2010.08.21%20PM.jpeg" alt="Special Photo">
+    <p id="love-note">Happy Birthday princess❤️ This here is to remind you that today is not just any other day, but the most important day on the calender, its YOUR birthday, and you are the most precious gift the planet has. You are always going to be loved like this, till the end of time</p>
+</div>
+
+<audio id="bg-music" autoplay loop>
+    <source src="https://raw.githubusercontent.com/Ricebaxl/v.mp3/dcdf484e60beb8bc49c463ddfc792c05c6a919de/Tejano%20Blue%20-%20Cigarettes%20After%20Sex.mp3" type="audio/mp3">
+</audio>
+
+<script>
+function revealSurprise() {
+    document.getElementById("bg-music").play();
+    const content = document.getElementById("hidden-content");
+    content.style.opacity = 1;
+    content.style.transform = "translateY(0)";
+}
+// Create floating hearts
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = Math.random() * 20 + 20 + "px";
+    heart.innerHTML = "❤️";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 8000);
+}
+
+setInterval(createHeart, 500);
+</script>
+
+</body>
+</html>
+
